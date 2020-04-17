@@ -1,2 +1,2 @@
-# LeeSooJin
+# LeeSuJin
 이수진
