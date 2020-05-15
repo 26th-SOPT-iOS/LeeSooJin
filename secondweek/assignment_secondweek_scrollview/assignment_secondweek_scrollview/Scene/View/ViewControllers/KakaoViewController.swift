@@ -12,7 +12,7 @@ class KakaoViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     private var dataInformations: [DataInformation] = []
-    
+    private var myProfile: [DataInformation] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +22,7 @@ class KakaoViewController: UIViewController {
         
         setdataInformaitons()
     }
-    
+      
     private func setdataInformaitons(){
         let data1 = DataInformation(name: "이수진", photo: "profile1Img", status: "hi")
         let data2 = DataInformation(name: "이진수", photo: "profile2Img", status: "hi")
@@ -34,6 +34,10 @@ class KakaoViewController: UIViewController {
         let data8 = DataInformation(name: "이진수", photo: "profile8Img", status: "hi")
         let data9 = DataInformation(name: "이진수", photo: "profile9Img", status: "hi")
         
+        let my = DataInformation(name: "나는이수진", photo: "profile9Img", status: "하힘드러")
+
+        
+        myProfile = [my]
         dataInformations = [data1,data2,data3,data4,data5,data6,data7,data8,data9]
         
     }
@@ -46,7 +50,7 @@ extension KakaoViewController: UITableViewDelegate {
         if indexPath.section == 0 {
             return 88
         } else {
-            return 88
+            return 80
         }
     }
     
@@ -83,12 +87,39 @@ extension KakaoViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let TableViewCell = tableView.dequeueReusableCell(withIdentifier: TableViewCell.identifier, for:
             indexPath) as? TableViewCell else { return UITableViewCell() }
+        
+        if indexPath.section == 1 {
         TableViewCell.setDataInformation(profileImageName:dataInformations[indexPath.row].photo,
                                          name: dataInformations[indexPath.row].name,
                                          status: dataInformations[indexPath.row].status)
-        return TableViewCell
+            return TableViewCell}
+        
+        else {
+            TableViewCell.setDataInformation(profileImageName: myProfile[0].photo, name: myProfile[0].name, status: myProfile[0].status)
+            
+            return TableViewCell
+        }
     }
 }
+//func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//
+//    guard let cell = tableView.dequeueReusableCell(withIdentifier: "ProfileCell", for: indexPath) as? ProfileCell else { return UITableViewCell() }
+//
+//    if indexPath.section == 0 {
+//        cell.settings(myProfile[0])
+//        cell.setImageRound(cell.profileImage, section: 0)
+//
+//        cell.profileImage.layer.cornerRadius = cell.profileImage.frame.height/2
+//
+//        return cell
+//    } else {
+//        cell.settings(friends[indexPath.item])
+//        cell.underBar.alpha = 0
+//
+//        return cell
+//    }
+//}
+
 
 
 //extension viewcon_kakao: UITableViewDataSource {
