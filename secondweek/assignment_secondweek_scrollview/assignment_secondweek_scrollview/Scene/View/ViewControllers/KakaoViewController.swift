@@ -48,9 +48,9 @@ extension KakaoViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.section == 0 {
-            return 88
+            return 88.5
         } else {
-            return 77
+            return 62
         }
     }
     
@@ -59,8 +59,29 @@ extension KakaoViewController: UITableViewDelegate {
         if section == 0 {
             return 0
         } else {
-            return 20
+            return 30
         }
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+
+        let view = UIView.init(frame: CGRect(x: 0, y: 0, width: tableView.frame.width, height: 30))
+
+        let headerLabel = UILabel()
+        let numberOfFriendLabel = UILabel()
+
+        headerLabel.text = "친구 "
+        headerLabel.font = UIFont.systemFont(ofSize: 12)
+        headerLabel.frame = CGRect.init(x: 15, y: 0, width: 50, height: 30)
+
+        numberOfFriendLabel.text = "\(dataInformations.count-1)"
+        numberOfFriendLabel.font = UIFont.systemFont(ofSize: 12)
+        numberOfFriendLabel.frame = CGRect.init(x: 40, y: 0, width: 50, height: 30)
+
+        view.addSubview(headerLabel)
+        view.addSubview(numberOfFriendLabel)
+
+        return view
     }
 }
 
@@ -82,21 +103,55 @@ extension KakaoViewController: UITableViewDataSource {
                  }
 
       }
-    
+//    cell.imageView.contentMode = UIViewContentMode.scaleAspectFit
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let TableViewCell = tableView.dequeueReusableCell(withIdentifier: TableViewCell.identifier, for:
             indexPath) as? TableViewCell else { return UITableViewCell() }
-        
+//        TableViewCell.profileImage.contentMo
         if indexPath.section == 1 {
-        TableViewCell.setDataInformation(profileImageName:dataInformations[indexPath.row].photo,
+            TableViewCell.setDataInformation(profileImageName:dataInformations[indexPath.row].photo,
                                          name: dataInformations[indexPath.row].name,
                                          status: dataInformations[indexPath.row].status)
+            
+//            TableViewCell.profileImage.frame = CGRect.init(x: 0, y: 0, width: 30 , height: 30)
+//            let marginguide = contentView.layoutMarginsGuide
+
+                //imageView auto layout constraints
+
+//            TableViewCell.profileImage.translatesAutoresizingMaskIntoConstraints = false
+//
+//            let marginguide = TableViewCell.contentView.layoutMarginsGuide
+//
+             TableViewCell.profileImage.layer.cornerRadius = TableViewCell.profileImage.frame.height/2
+            TableViewCell.profileImage.topAnchor.constraint(equalTo: TableViewCell.topAnchor, constant: 6).isActive = true
+            TableViewCell.profileImage.leadingAnchor.constraint(equalTo: TableViewCell.leadingAnchor, constant: 16).isActive = true
+            TableViewCell.profileImage.heightAnchor.constraint(equalToConstant: 50).isActive = true
+            TableViewCell.profileImage.widthAnchor.constraint(equalToConstant: 50).isActive = true
+
+//            TableViewCell.profileImage.contentMode = .scaleAspectFill
+//            TableViewCell.profileImage.layer.cornerRadius = 20 //half of your width or height
             return TableViewCell}
         
         else {
             TableViewCell.setDataInformation(profileImageName: myProfile[0].photo, name: myProfile[0].name, status: myProfile[0].status)
+//            TableViewCell.profileImage.frame = CGRect.init(x: 0, y: 0, width: 60 , height: 60)
             
+//            TableViewCell.profileImage.translatesAutoresizingMaskIntoConstraints = false
+//
+//            let marginguide = TableViewCell.contentView.layoutMarginsGuide
+//
+//            TableViewCell.profileImage.topAnchor.constraint(equalTo: marginguide.topAnchor).isActive = true
+//            TableViewCell.profileImage.leadingAnchor.constraint(equalTo: marginguide.leadingAnchor).isActive = true
+            TableViewCell.profileImage.layer.cornerRadius = TableViewCell.profileImage.frame.height/2
+            TableViewCell.profileImage.topAnchor.constraint(equalTo: TableViewCell.topAnchor, constant: 13).isActive = true
+            TableViewCell.profileImage.leadingAnchor.constraint(equalTo: TableViewCell.leadingAnchor, constant: 16).isActive = true
+            TableViewCell.profileImage.heightAnchor.constraint(equalToConstant: 60).isActive = true
+            TableViewCell.profileImage.widthAnchor.constraint(equalToConstant: 60).isActive = true
+
+//            TableViewCell.profileImage.contentMode = .scaleAspectFill
+//            TableViewCell.profileImage.layer.cornerRadius = 20 //half of your width or height
+//
             return TableViewCell
         }
     }

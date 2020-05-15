@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--친구-->
+        <!--홈-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="assignment_secondweek_scrollview" customModuleProvider="target" sceneMemberID="viewController">
@@ -690,14 +690,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="asQ-hl-Axj"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="친구" image="person" catalog="system" selectedImage="person.fill" id="QZB-Ld-2fo"/>
+                    <tabBarItem key="tabBarItem" title="홈" image="house" catalog="system" selectedImage="house.fill" id="QZB-Ld-2fo"/>
                     <size key="freeformSize" width="414" height="1500"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3810" y="609"/>
         </scene>
-        <!--홈-->
+        <!--친구-->
         <scene sceneID="iP5-U6-Ou9">
             <objects>
                 <viewController storyboardIdentifier="KakaoViewController" id="m5Q-po-VW1" customClass="KakaoViewController" customModule="assignment_secondweek_scrollview" customModuleProvider="target" sceneMemberID="viewController">
@@ -712,25 +712,21 @@
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableViewCell" rowHeight="91" id="hOE-W3-zx4" customClass="TableViewCell" customModule="assignment_secondweek_scrollview" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="91"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hOE-W3-zx4" id="4ld-ZC-8jt">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="ContentViewid" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hOE-W3-zx4" id="4ld-ZC-8jt">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="91"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이수진" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gFr-B5-BAN">
-                                                    <rect key="frame" x="88" y="32.5" width="45" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="이수진" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gFr-B5-BAN">
+                                                    <rect key="frame" x="49" y="12.5" width="45" height="21"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                     <color key="textColor" red="0.1529411765" green="0.1529411765" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="oursoptBgImg" translatesAutoresizingMaskIntoConstraints="NO" id="2BL-aH-a6g">
-                                                    <rect key="frame" x="16" y="13" width="59" height="60"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="59" id="IoS-7i-W11"/>
-                                                        <constraint firstAttribute="height" constant="60" id="kH6-Hf-v1E"/>
-                                                    </constraints>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="814" translatesAutoresizingMaskIntoConstraints="NO" id="2BL-aH-a6g">
+                                                    <rect key="frame" x="16" y="13" width="20" height="20"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="irj-Ke-lK6">
-                                                    <rect key="frame" x="336" y="32.5" width="42" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="irj-Ke-lK6">
+                                                    <rect key="frame" x="336" y="12.5" width="42" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -738,10 +734,8 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="irj-Ke-lK6" firstAttribute="centerY" secondItem="gFr-B5-BAN" secondAttribute="centerY" id="G50-yE-Ksh"/>
-                                                <constraint firstItem="2BL-aH-a6g" firstAttribute="leading" secondItem="4ld-ZC-8jt" secondAttribute="leading" constant="16" id="Oru-WK-zHk"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="irj-Ke-lK6" secondAttribute="trailing" constant="16" id="TQZ-BS-xO9"/>
                                                 <constraint firstItem="gFr-B5-BAN" firstAttribute="centerY" secondItem="2BL-aH-a6g" secondAttribute="centerY" id="oNT-DG-Bsq"/>
-                                                <constraint firstItem="2BL-aH-a6g" firstAttribute="top" secondItem="4ld-ZC-8jt" secondAttribute="top" constant="13" id="qyU-fE-dsb"/>
                                                 <constraint firstItem="gFr-B5-BAN" firstAttribute="leading" secondItem="2BL-aH-a6g" secondAttribute="trailing" constant="13" id="wb6-j4-zUg"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -797,7 +791,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="uWS-p8-mSa"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="홈" image="house" catalog="system" selectedImage="house.fill" id="7eE-7N-pXy"/>
+                    <tabBarItem key="tabBarItem" title="친구" image="person" catalog="system" selectedImage="person.fill" id="7eE-7N-pXy"/>
                     <connections>
                         <outlet property="tableView" destination="rOq-HV-KQF" id="3rf-gI-ydU"/>
                     </connections>
