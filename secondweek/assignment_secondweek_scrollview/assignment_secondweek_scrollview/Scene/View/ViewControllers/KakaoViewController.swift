@@ -50,7 +50,7 @@ extension KakaoViewController: UITableViewDelegate {
         if indexPath.section == 0 {
             return 88
         } else {
-            return 80
+            return 77
         }
     }
     
