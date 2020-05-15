@@ -27,21 +27,24 @@ class KakaoViewController: UIViewController {
     }
       
     private func setdataInformaitons(){
-        let data1 = DataInformation(name: "황지은", photo: "jieun", status: "과즙미 팡팡~!")
-        let data2 = DataInformation(name: "송지훈", photo: "jihun", status: "아요주정뱅이")
-        let data3 = DataInformation(name: "김민희", photo: "minhee", status: "마라샹궈 먹을사람 구해요")
-        let data4 = DataInformation(name: "이진수", photo: "profile4Img", status: "hi")
-        let data5 = DataInformation(name: "이수진", photo: "profile5Img", status: "hi")
-        let data6 = DataInformation(name: "이진수", photo: "profile6Img", status: "hi")
-        let data7 = DataInformation(name: "이수진", photo: "profile7Img", status: "hi")
-        let data8 = DataInformation(name: "이진수", photo: "profile8Img", status: "hi")
-        let data9 = DataInformation(name: "이진수", photo: "profile9Img", status: "hi")
-        let data10 = DataInformation(name: "이수진", photo: "oursoptBgImg", status: "bye")
-        let my = DataInformation(name: "나는이수진", photo: "profile9Img", status: "하힘드러")
+        let data1 = DataInformation(name: "승호사부님", photo: "seungho", status: "o' 스승의 은혜 cover by 진수")
+        let data2 = DataInformation(name: "술지훈", photo: "jihun", status: "솝트 최강주정뱅이 바로 나")
+        let data3 = DataInformation(name: "민희୧( “̮ )୨✧", photo: "minhee", status: "마라샹궈 먹을사람 구해요")
+        let data4 = DataInformation(name: "아요갓지은", photo: "jieun", status: "과즙미 팡팡~!")
+        let data5 = DataInformation(name: "손영재", photo: "youngjae", status: "슈퍼슈퍼슈퍼콘")
+        let data6 = DataInformation(name: "백예슬", photo: "yesul", status: "존예슬 나죽어,,")
+        let data7 = DataInformation(name: "류세花", photo: "sehwa", status: "the real flower")
+        let data77 = DataInformation(name: "아요 4주차 과제", photo: "sopt2", status: "미안 너 사라져")
+        let data8 = DataInformation(name: "임대가능", photo: "sopt2", status: "입주환영")
+        let data9 = DataInformation(name: "세입자구함", photo: "sopt2", status: "입주환영")
+        let data10 = DataInformation(name: "무료분양", photo: "sopt2", status: "입주환영")
+        let data11 = DataInformation(name: "연락바람", photo: "sopt2", status: "입주환영")
+        let data12 = DataInformation(name: "자리많음", photo: "sopt2", status: "입주환영")
+        let my = DataInformation(name: "이수진", photo: "sujin", status: "하,,,자고싶어,,힘들어")
 
         
         myProfile = [my]
-        dataInformations = [data1,data2,data3,data4,data5,data6,data7,data8,data9,data10]
+        dataInformations = [data1,data2,data3,data4,data5,data6,data7,data77,data8,data9,data10,data11,data12]
         
     }
 }
@@ -155,7 +158,7 @@ extension KakaoViewController: UITableViewDataSource {
             TableViewCell.profileImage.heightAnchor.constraint(equalToConstant: 60).isActive = true
             TableViewCell.profileImage.widthAnchor.constraint(equalToConstant: 60).isActive = true
 
-            TableViewCell.profileImage.contentMode = .scaleAspectFill
+//            TableViewCell.profileImage.contentMode = .scaleAspectFill
 //            TableViewCell.profileImage.layer.cornerRadius = 20 //half of your width or height
 
 //
