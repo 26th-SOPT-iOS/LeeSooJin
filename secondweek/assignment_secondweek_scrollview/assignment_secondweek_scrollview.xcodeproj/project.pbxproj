@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		135BD0B3246E8F4600F20527 /* viewcon_kakao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135BD0B2246E8F4600F20527 /* viewcon_kakao.swift */; };
+		135BD0B5246E9BD000F20527 /* KaKaoCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135BD0B4246E9BD000F20527 /* KaKaoCellTableViewCell.swift */; };
+		135BD0B7246EA7AC00F20527 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135BD0B6246EA7AC00F20527 /* TableViewCell.swift */; };
+		135BD0B9246EB9B300F20527 /* DataInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135BD0B8246EB9B300F20527 /* DataInformation.swift */; };
 		13C8F955245BEBF5001AC3C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C8F954245BEBF5001AC3C7 /* AppDelegate.swift */; };
 		13C8F957245BEBF5001AC3C7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C8F956245BEBF5001AC3C7 /* SceneDelegate.swift */; };
 		13C8F959245BEBF5001AC3C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C8F958245BEBF5001AC3C7 /* ViewController.swift */; };
@@ -16,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		135BD0B2246E8F4600F20527 /* viewcon_kakao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewcon_kakao.swift; sourceTree = "<group>"; };
+		135BD0B4246E9BD000F20527 /* KaKaoCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KaKaoCellTableViewCell.swift; sourceTree = "<group>"; };
+		135BD0B6246EA7AC00F20527 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		135BD0B8246EB9B300F20527 /* DataInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataInformation.swift; sourceTree = "<group>"; };
 		13C8F951245BEBF5001AC3C7 /* assignment_secondweek_scrollview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = assignment_secondweek_scrollview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13C8F954245BEBF5001AC3C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		13C8F956245BEBF5001AC3C7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,9 +68,13 @@
 				13C8F956245BEBF5001AC3C7 /* SceneDelegate.swift */,
 				13C8F958245BEBF5001AC3C7 /* ViewController.swift */,
 				13C8F95A245BEBF5001AC3C7 /* Main.storyboard */,
+				135BD0B4246E9BD000F20527 /* KaKaoCellTableViewCell.swift */,
 				13C8F95D245BEBF6001AC3C7 /* Assets.xcassets */,
 				13C8F95F245BEBF6001AC3C7 /* LaunchScreen.storyboard */,
 				13C8F962245BEBF6001AC3C7 /* Info.plist */,
+				135BD0B2246E8F4600F20527 /* viewcon_kakao.swift */,
+				135BD0B6246EA7AC00F20527 /* TableViewCell.swift */,
+				135BD0B8246EB9B300F20527 /* DataInformation.swift */,
 			);
 			path = assignment_secondweek_scrollview;
 			sourceTree = "<group>";
@@ -140,7 +152,11 @@
 			files = (
 				13C8F959245BEBF5001AC3C7 /* ViewController.swift in Sources */,
 				13C8F955245BEBF5001AC3C7 /* AppDelegate.swift in Sources */,
+				135BD0B5246E9BD000F20527 /* KaKaoCellTableViewCell.swift in Sources */,
+				135BD0B9246EB9B300F20527 /* DataInformation.swift in Sources */,
+				135BD0B7246EA7AC00F20527 /* TableViewCell.swift in Sources */,
 				13C8F957245BEBF5001AC3C7 /* SceneDelegate.swift in Sources */,
+				135BD0B3246E8F4600F20527 /* viewcon_kakao.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
