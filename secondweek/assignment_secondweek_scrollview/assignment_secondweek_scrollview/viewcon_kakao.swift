@@ -69,7 +69,7 @@ extension viewcon_kakao: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-       guard let cell = tableView.dequeueReusableCell(withIdentifier: "ProfileCell", for: indexPath) as? ProfileCell  else { return UITableViewCell() }
+       guard let cell = tableView.dequeueReusableCell(withIdentifier: "ProfileCell", for: indexPath) as? TableViewCell  else { return UITableViewCell() }
 
         if indexPath.section == 0 {
             cell.settings(dataInformations[0])
