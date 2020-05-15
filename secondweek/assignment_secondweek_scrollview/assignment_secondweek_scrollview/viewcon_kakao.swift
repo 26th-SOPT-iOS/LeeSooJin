@@ -30,14 +30,15 @@ class viewcon_kakao: UIViewController {
         let data2 = DataInformation(name: "이진수", photo: "profile2Img")
         let data3 = DataInformation(name: "이수진", photo: "profile3Img")
         let data4 = DataInformation(name: "이진수", photo: "profile4Img")
-        let data5 = DataInformation(name: "이수진", photo: "profile1Img")
-        let data6 = DataInformation(name: "이진수", photo: "profile2Img")
-        let data7 = DataInformation(name: "이수진", photo: "profile3Img")
-        let data8 = DataInformation(name: "이진수", photo: "profile4Img")
+        let data5 = DataInformation(name: "이수진", photo: "profile5Img")
+        let data6 = DataInformation(name: "이진수", photo: "profile6Img")
+        let data7 = DataInformation(name: "이수진", photo: "profile7Img")
+        let data8 = DataInformation(name: "이진수", photo: "profile8Img")
+        let data9 = DataInformation(name: "이진수", photo: "profile9Img")
         
 
 
-        dataInformations = [data1,data2]
+        dataInformations = [data1,data2,data3,data4,data5,data6,data7,data8,data9]
 
     }
    
@@ -58,7 +59,7 @@ extension viewcon_kakao: UITableViewDataSource {
         case 0 :
             return 1
         case 1 :
-            return self.friends.count
+            return self.dataInformations.count
         default :
             return 0
         }
@@ -71,12 +72,12 @@ extension viewcon_kakao: UITableViewDataSource {
        guard let cell = tableView.dequeueReusableCell(withIdentifier: "ProfileCell", for: indexPath) as? ProfileCell  else { return UITableViewCell() }
 
         if indexPath.section == 0 {
-            cell.settings(friends[0])
+            cell.settings(dataInformations[0])
             cell.profileImage.layer.cornerRadius = cell.profileImage.frame.height/2
 
             return cell
         } else {
-            cell.settings(friends[indexPath.item+1])
+            cell.settings(dataInformations[indexPath.item+1])
 
             return cell
         }
