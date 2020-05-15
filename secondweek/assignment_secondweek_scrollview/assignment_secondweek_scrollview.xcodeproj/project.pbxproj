@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		135BD0B3246E8F4600F20527 /* viewcon_kakao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135BD0B2246E8F4600F20527 /* viewcon_kakao.swift */; };
+		135BD0B3246E8F4600F20527 /* KakaoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135BD0B2246E8F4600F20527 /* KakaoViewController.swift */; };
 		135BD0B5246E9BD000F20527 /* KaKaoCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135BD0B4246E9BD000F20527 /* KaKaoCellTableViewCell.swift */; };
 		135BD0B7246EA7AC00F20527 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135BD0B6246EA7AC00F20527 /* TableViewCell.swift */; };
 		135BD0B9246EB9B300F20527 /* DataInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135BD0B8246EB9B300F20527 /* DataInformation.swift */; };
@@ -20,7 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		135BD0B2246E8F4600F20527 /* viewcon_kakao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewcon_kakao.swift; sourceTree = "<group>"; };
+		135BD0B2246E8F4600F20527 /* KakaoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoViewController.swift; sourceTree = "<group>"; };
 		135BD0B4246E9BD000F20527 /* KaKaoCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KaKaoCellTableViewCell.swift; sourceTree = "<group>"; };
 		135BD0B6246EA7AC00F20527 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		135BD0B8246EB9B300F20527 /* DataInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataInformation.swift; sourceTree = "<group>"; };
@@ -64,19 +64,67 @@
 		13C8F953245BEBF5001AC3C7 /* assignment_secondweek_scrollview */ = {
 			isa = PBXGroup;
 			children = (
-				13C8F954245BEBF5001AC3C7 /* AppDelegate.swift */,
-				13C8F956245BEBF5001AC3C7 /* SceneDelegate.swift */,
-				13C8F958245BEBF5001AC3C7 /* ViewController.swift */,
-				13C8F95A245BEBF5001AC3C7 /* Main.storyboard */,
-				135BD0B4246E9BD000F20527 /* KaKaoCellTableViewCell.swift */,
-				13C8F95D245BEBF6001AC3C7 /* Assets.xcassets */,
-				13C8F95F245BEBF6001AC3C7 /* LaunchScreen.storyboard */,
+				3DED81A5246ED1DA0029ADAD /* Supports */,
+				3DED81A1246ED14D0029ADAD /* Scene */,
 				13C8F962245BEBF6001AC3C7 /* Info.plist */,
-				135BD0B2246E8F4600F20527 /* viewcon_kakao.swift */,
-				135BD0B6246EA7AC00F20527 /* TableViewCell.swift */,
-				135BD0B8246EB9B300F20527 /* DataInformation.swift */,
 			);
 			path = assignment_secondweek_scrollview;
+			sourceTree = "<group>";
+		};
+		3DED81A1246ED14D0029ADAD /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				3DED81A6246ED1E90029ADAD /* Swiftfiles */,
+				3DED81A2246ED14D0029ADAD /* View */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		3DED81A2246ED14D0029ADAD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				13C8F95A245BEBF5001AC3C7 /* Main.storyboard */,
+				13C8F95F245BEBF6001AC3C7 /* LaunchScreen.storyboard */,
+				3DED81A4246ED1B70029ADAD /* Cells */,
+				3DED81A3246ED14E0029ADAD /* ViewControllers */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3DED81A3246ED14E0029ADAD /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				135BD0B2246E8F4600F20527 /* KakaoViewController.swift */,
+				13C8F958245BEBF5001AC3C7 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3DED81A4246ED1B70029ADAD /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				135BD0B6246EA7AC00F20527 /* TableViewCell.swift */,
+				135BD0B4246E9BD000F20527 /* KaKaoCellTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		3DED81A5246ED1DA0029ADAD /* Supports */ = {
+			isa = PBXGroup;
+			children = (
+				13C8F95D245BEBF6001AC3C7 /* Assets.xcassets */,
+				13C8F954245BEBF5001AC3C7 /* AppDelegate.swift */,
+				13C8F956245BEBF5001AC3C7 /* SceneDelegate.swift */,
+			);
+			path = Supports;
+			sourceTree = "<group>";
+		};
+		3DED81A6246ED1E90029ADAD /* Swiftfiles */ = {
+			isa = PBXGroup;
+			children = (
+				135BD0B8246EB9B300F20527 /* DataInformation.swift */,
+			);
+			path = Swiftfiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,7 +204,7 @@
 				135BD0B9246EB9B300F20527 /* DataInformation.swift in Sources */,
 				135BD0B7246EA7AC00F20527 /* TableViewCell.swift in Sources */,
 				13C8F957245BEBF5001AC3C7 /* SceneDelegate.swift in Sources */,
-				135BD0B3246E8F4600F20527 /* viewcon_kakao.swift in Sources */,
+				135BD0B3246E8F4600F20527 /* KakaoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

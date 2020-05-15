@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--친구-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="assignment_secondweek_scrollview" customModuleProvider="target" sceneMemberID="viewController">
@@ -690,16 +690,17 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="asQ-hl-Axj"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="친구" image="person" catalog="system" selectedImage="person.fill" id="QZB-Ld-2fo"/>
                     <size key="freeformSize" width="414" height="1500"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="119.86607142857142"/>
+            <point key="canvasLocation" x="3810" y="609"/>
         </scene>
-        <!--Item-->
+        <!--홈-->
         <scene sceneID="iP5-U6-Ou9">
             <objects>
-                <viewController id="m5Q-po-VW1" customClass="viewcon_kakao" customModule="assignment_secondweek_scrollview" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="KakaoViewController" id="m5Q-po-VW1" customClass="KakaoViewController" customModule="assignment_secondweek_scrollview" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="guj-eH-wtZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -728,9 +729,17 @@
                                                         <constraint firstAttribute="height" constant="60" id="kH6-Hf-v1E"/>
                                                     </constraints>
                                                 </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="irj-Ke-lK6">
+                                                    <rect key="frame" x="336" y="32.5" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="irj-Ke-lK6" firstAttribute="centerY" secondItem="gFr-B5-BAN" secondAttribute="centerY" id="G50-yE-Ksh"/>
                                                 <constraint firstItem="2BL-aH-a6g" firstAttribute="leading" secondItem="4ld-ZC-8jt" secondAttribute="leading" constant="16" id="Oru-WK-zHk"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="irj-Ke-lK6" secondAttribute="trailing" constant="16" id="TQZ-BS-xO9"/>
                                                 <constraint firstItem="gFr-B5-BAN" firstAttribute="centerY" secondItem="2BL-aH-a6g" secondAttribute="centerY" id="oNT-DG-Bsq"/>
                                                 <constraint firstItem="2BL-aH-a6g" firstAttribute="top" secondItem="4ld-ZC-8jt" secondAttribute="top" constant="13" id="qyU-fE-dsb"/>
                                                 <constraint firstItem="gFr-B5-BAN" firstAttribute="leading" secondItem="2BL-aH-a6g" secondAttribute="trailing" constant="13" id="wb6-j4-zUg"/>
@@ -739,6 +748,7 @@
                                         <connections>
                                             <outlet property="profileId" destination="gFr-B5-BAN" id="P6U-hR-ekz"/>
                                             <outlet property="profileImage" destination="2BL-aH-a6g" id="Fyj-wf-7kV"/>
+                                            <outlet property="statusLabel" destination="irj-Ke-lK6" id="HIM-VS-8U7"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -787,14 +797,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="uWS-p8-mSa"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="7eE-7N-pXy"/>
+                    <tabBarItem key="tabBarItem" title="홈" image="house" catalog="system" selectedImage="house.fill" id="7eE-7N-pXy"/>
                     <connections>
                         <outlet property="tableView" destination="rOq-HV-KQF" id="3rf-gI-ydU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8lb-c7-u4X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3700" y="-14"/>
+            <point key="canvasLocation" x="3810" y="-292"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="BPJ-3n-Jtu">
@@ -802,11 +812,13 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="J8V-sY-xoG" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="znC-3j-2Qe">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="m5Q-po-VW1" kind="relationship" relationship="viewControllers" id="0Hq-kJ-Lzw"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="rFS-Pw-KFb"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rxl-pO-elP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -822,6 +834,10 @@
         <image name="9229480325230625777943802058411231781322752N" width="148" height="198"/>
         <image name="9235840225230627344610312982063520952090624N" width="148" height="198"/>
         <image name="9298934625230618844611168856475911587889152N" width="148" height="198"/>
+        <image name="house" catalog="system" width="128" height="110"/>
+        <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="oursoptBgImg" width="1125" height="630"/>
+        <image name="person" catalog="system" width="128" height="117"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
     </resources>
 </document>

@@ -9,10 +9,15 @@
 import Foundation
 
 struct DataInformation {
+  
     var name: String
     var photo: String
-    init(name: String, photo: String) {
+    var status: String
+    
+    init(name: String, photo: String, status: String) {
+        
         self.name = name
         self.photo = photo
+        self.status = status
     }
 }

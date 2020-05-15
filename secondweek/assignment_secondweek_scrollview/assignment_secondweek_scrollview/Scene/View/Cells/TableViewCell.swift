@@ -10,11 +10,13 @@ import UIKit
 
 class TableViewCell: UITableViewCell {
     
-    static let identifier: String = "ProfileCell"
+    static let identifier: String = "TableViewCell"
     
     @IBOutlet weak var profileImage: UIImageView!
     @IBOutlet weak var profileId: UILabel!
-   
+
+    @IBOutlet weak var statusLabel: UILabel!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -28,9 +30,11 @@ class TableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func setDataInformation(profileImageName: String, name: String){
+    func setDataInformation(profileImageName: String, name: String, status:String){
         profileImage.image = UIImage(named: profileImageName)
         profileId.text = name
+        statusLabel.text = status
+        
 
 }
 }
