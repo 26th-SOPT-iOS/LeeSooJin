@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XcQ-MR-QZI">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Item-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController storyboardIdentifier="ViewController" modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="ViewController" customModule="sopt_ios_firstweek_homework2" customModuleProvider="target" sceneMemberID="viewController">
@@ -50,6 +50,9 @@
                                         </fragment>
                                     </attributedString>
                                 </state>
+                                <connections>
+                                    <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="drD-sf-tcU"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="soptLogo" translatesAutoresizingMaskIntoConstraints="NO" id="dT8-mn-MJL">
                                 <rect key="frame" x="86" y="194" width="242" height="68"/>
@@ -68,26 +71,10 @@
                                         <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                         <state key="normal">
                                             <attributedString key="attributedTitle">
-                                                <fragment content="회원가입">
-                                                    <attributes>
-                                                        <color key="NSColor" red="0.39124602079999998" green="0.39156565069999999" blue="0.39129555230000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <font key="NSFont" size="15" name=".AppleSDGothicNeoI-Regular"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                        <integer key="NSUnderline" value="1"/>
-                                                    </attributes>
-                                                </fragment>
-                                                <fragment content=" ">
+                                                <fragment content="회원가입 하기">
                                                     <attributes>
                                                         <color key="NSColor" red="0.39124602079999998" green="0.39156565069999999" blue="0.39129555230000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <font key="NSFont" metaFont="system" size="15"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                        <integer key="NSUnderline" value="1"/>
-                                                    </attributes>
-                                                </fragment>
-                                                <fragment content="하기">
-                                                    <attributes>
-                                                        <color key="NSColor" red="0.39124602079999998" green="0.39156565069999999" blue="0.39129555230000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <font key="NSFont" size="15" name=".AppleSDGothicNeoI-Regular"/>
                                                         <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                         <integer key="NSUnderline" value="1"/>
                                                     </attributes>
@@ -121,8 +108,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="fdu-Hy-ZeM"/>
                     <navigationItem key="navigationItem" id="owm-3V-IBv"/>
                     <connections>
+                        <outlet property="input_id" destination="PaD-zF-TgK" id="oC5-R1-6cY"/>
+                        <outlet property="input_password" destination="vrk-i9-xZR" id="AcU-L7-V5H"/>
                         <outletCollection property="textfieldCollection" destination="PaD-zF-TgK" collectionClass="NSMutableArray" id="3Ho-hT-zbB"/>
                         <outletCollection property="textfieldCollection" destination="vrk-i9-xZR" collectionClass="NSMutableArray" id="RtS-vz-7bk"/>
                         <outletCollection property="buttonCollection" destination="Rpv-ly-umh" collectionClass="NSMutableArray" id="KI1-Wk-j1F"/>
@@ -130,7 +120,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1047.8260869565217" y="117.85714285714285"/>
+            <point key="canvasLocation" x="1957.9710144927537" y="117.85714285714285"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="gsi-l1-lAd">
@@ -210,7 +200,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WBI-pJ-uZ7">
                                 <rect key="frame" x="8" y="51" width="46" height="30"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" id="3AZ-lL-n6z"/>
+                                    <segue destination="XcQ-MR-QZI" kind="presentation" id="3AZ-lL-n6z"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -253,7 +243,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bWz-HB-Hwm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1953.6231884057972" y="117.85714285714285"/>
+            <point key="canvasLocation" x="2863.768115942029" y="117.85714285714285"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="efX-PH-Ozn">
@@ -318,6 +308,23 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wMc-1c-h1X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1953.6231884057972" y="811.60714285714278"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="pG4-s1-oPL">
+            <objects>
+                <tabBarController storyboardIdentifier="customTabbarController" automaticallyAdjustsScrollViewInsets="NO" id="XcQ-MR-QZI" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="PWp-Hf-7LB">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="PeM-9J-hlt"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S9v-uH-aAe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="117.85714285714285"/>
         </scene>
     </scenes>
     <resources>
