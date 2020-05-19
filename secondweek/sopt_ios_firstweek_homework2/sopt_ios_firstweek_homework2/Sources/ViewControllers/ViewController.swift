@@ -43,23 +43,25 @@ class ViewController: UIViewController {
         }
     }
     @IBOutlet var textfieldCollection: [UITextField]!
+    @IBOutlet weak var buttonCollection: UIButton!
     
-    @IBOutlet var buttonCollection: [UIButton]!
     
     override func viewDidLoad() {
+//         setLayout()
         super.viewDidLoad()
-        setLayout()
-        // Do any additional setup after loading the view.
+//        setLayout()
+       
     }
 
-    func setLayout(){
-    
-       for button in buttonCollection{
-        button.layer.cornerRadius = 0.07 * button.bounds.size.width
-       }
-       for textfield in textfieldCollection{
-           textfield.layer.cornerRadius = 0.07 * textfield.bounds.size.width
-       }
+//    func setLayout(){
+//
+//
+//        self.buttonCollection.layer.cornerRadius = 0.07 * buttonCollection.bounds.size.width
+//
+//       for textfield in textfieldCollection{
+//           textfield.layer.cornerRadius = 0.07 * textfield.bounds.size.width
+//       }
+//    }
 
 //    @IBAction func transferData(_ sender: Any) {
 //        guard let receiveViewController = self.storyboard?.instantiateViewController(identifier: "LoginViewController") as? LoginViewController else {return}
@@ -69,7 +71,7 @@ class ViewController: UIViewController {
 //
 //        self.present(receiveViewController,animated: true, completion: nil)
 //   }
-    
-}
+
+
 
 }

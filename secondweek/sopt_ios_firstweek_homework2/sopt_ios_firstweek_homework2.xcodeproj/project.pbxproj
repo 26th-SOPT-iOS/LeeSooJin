@@ -20,6 +20,11 @@
 		13AB99CA246FA2E7002801FA /* SigninData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AB99C9246FA2E7002801FA /* SigninData.swift */; };
 		13AB99CC246FA4A1002801FA /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AB99CB246FA4A1002801FA /* NetworkResult.swift */; };
 		13AB99CE246FA4DD002801FA /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AB99CD246FA4DD002801FA /* LoginService.swift */; };
+		13AB99D624726E5A002801FA /* KakaoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AB99D524726E5A002801FA /* KakaoViewController.swift */; };
+		13AB99D824726E66002801FA /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AB99D724726E66002801FA /* TableViewCell.swift */; };
+		13AB99DA24726E6F002801FA /* DataInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AB99D924726E6F002801FA /* DataInformation.swift */; };
+		13AB99DC2473AA1E002801FA /* SignupData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AB99DB2473AA1E002801FA /* SignupData.swift */; };
+		13AB99DE2473B811002801FA /* SignupService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AB99DD2473B811002801FA /* SignupService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +42,11 @@
 		13AB99C9246FA2E7002801FA /* SigninData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninData.swift; sourceTree = "<group>"; };
 		13AB99CB246FA4A1002801FA /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
 		13AB99CD246FA4DD002801FA /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		13AB99D524726E5A002801FA /* KakaoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KakaoViewController.swift; path = "../../../../../3주차 과제/assignment_secondweek_scrollview/assignment_secondweek_scrollview/Scene/View/ViewControllers/KakaoViewController.swift"; sourceTree = "<group>"; };
+		13AB99D724726E66002801FA /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewCell.swift; path = "../../../../3주차 과제/assignment_secondweek_scrollview/assignment_secondweek_scrollview/Scene/View/Cells/TableViewCell.swift"; sourceTree = "<group>"; };
+		13AB99D924726E6F002801FA /* DataInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataInformation.swift; path = "../../../../3주차 과제/assignment_secondweek_scrollview/assignment_secondweek_scrollview/Scene/Swiftfiles/DataInformation.swift"; sourceTree = "<group>"; };
+		13AB99DB2473AA1E002801FA /* SignupData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupData.swift; sourceTree = "<group>"; };
+		13AB99DD2473B811002801FA /* SignupService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupService.swift; sourceTree = "<group>"; };
 		1E4971351878319EEF0F3C6C /* Pods_sopt_ios_firstweek_homework2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sopt_ios_firstweek_homework2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B71895A42070B85DB28B454 /* Pods-sopt_ios_firstweek_homework2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sopt_ios_firstweek_homework2.debug.xcconfig"; path = "Target Support Files/Pods-sopt_ios_firstweek_homework2/Pods-sopt_ios_firstweek_homework2.debug.xcconfig"; sourceTree = "<group>"; };
 		CF324ECA0D31C009F6543641 /* Pods-sopt_ios_firstweek_homework2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sopt_ios_firstweek_homework2.release.xcconfig"; path = "Target Support Files/Pods-sopt_ios_firstweek_homework2/Pods-sopt_ios_firstweek_homework2.release.xcconfig"; sourceTree = "<group>"; };
@@ -95,9 +105,13 @@
 		13AB99D1246FAD98002801FA /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				13AB99D924726E6F002801FA /* DataInformation.swift */,
 				13A2098E244AE850003B8147 /* AppDelegate.swift */,
 				13A20990244AE850003B8147 /* SceneDelegate.swift */,
+				13AB99D724726E66002801FA /* TableViewCell.swift */,
 				13AB99C9246FA2E7002801FA /* SigninData.swift */,
+				13AB99DB2473AA1E002801FA /* SignupData.swift */,
+				13AB99DD2473B811002801FA /* SignupService.swift */,
 				13AB99CB246FA4A1002801FA /* NetworkResult.swift */,
 				13AB99CD246FA4DD002801FA /* LoginService.swift */,
 				13AB99D4246FB9A7002801FA /* ViewControllers */,
@@ -117,6 +131,7 @@
 		13AB99D4246FB9A7002801FA /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				13AB99D524726E5A002801FA /* KakaoViewController.swift */,
 				13A20992244AE850003B8147 /* ViewController.swift */,
 				13A209A2244AF361003B8147 /* LoginViewController.swift */,
 				13A209A4244AF385003B8147 /* SignUpViewController.swift */,
@@ -260,10 +275,15 @@
 				13A20993244AE850003B8147 /* ViewController.swift in Sources */,
 				13AB99C8246FA1B5002801FA /* APIConstants.swift in Sources */,
 				13A2098F244AE850003B8147 /* AppDelegate.swift in Sources */,
+				13AB99DA24726E6F002801FA /* DataInformation.swift in Sources */,
 				13AB99CE246FA4DD002801FA /* LoginService.swift in Sources */,
 				13AB99CA246FA2E7002801FA /* SigninData.swift in Sources */,
+				13AB99D824726E66002801FA /* TableViewCell.swift in Sources */,
 				13A20991244AE850003B8147 /* SceneDelegate.swift in Sources */,
 				13A209A5244AF385003B8147 /* SignUpViewController.swift in Sources */,
+				13AB99D624726E5A002801FA /* KakaoViewController.swift in Sources */,
+				13AB99DE2473B811002801FA /* SignupService.swift in Sources */,
+				13AB99DC2473AA1E002801FA /* SignupData.swift in Sources */,
 				13AB99CC246FA4A1002801FA /* NetworkResult.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
