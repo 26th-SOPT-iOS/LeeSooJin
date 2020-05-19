@@ -166,6 +166,9 @@
                                         </fragment>
                                     </attributedString>
                                 </state>
+                                <connections>
+                                    <action selector="Signupbutton:" destination="KLf-rW-shG" eventType="touchUpInside" id="4Xg-8a-a36"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hWd-fZ-SOL">
                                 <rect key="frame" x="146" y="309" width="122" height="29"/>
@@ -244,6 +247,11 @@
                     </view>
                     <navigationItem key="navigationItem" id="r5j-2I-S5L"/>
                     <connections>
+                        <outlet property="signup_email" destination="z7x-3p-nFp" id="vRY-kM-dFF"/>
+                        <outlet property="signup_id" destination="hM7-t0-mq8" id="tin-TM-mMk"/>
+                        <outlet property="signup_name" destination="7A2-9L-Sfw" id="zOg-Nm-b7M"/>
+                        <outlet property="signup_phone" destination="ulK-Fs-8LQ" id="13T-EO-pXX"/>
+                        <outlet property="signup_pw" destination="fBx-hA-CG9" id="eIO-X9-ojc"/>
                         <outletCollection property="textfieldCollection" destination="hM7-t0-mq8" collectionClass="NSMutableArray" id="Xoh-ix-Ol6"/>
                         <outletCollection property="textfieldCollection" destination="fBx-hA-CG9" collectionClass="NSMutableArray" id="TR8-u9-qT6"/>
                         <outletCollection property="buttonCollection" destination="rRs-cV-WhO" collectionClass="NSMutableArray" id="HVK-1o-2Ip"/>
@@ -254,7 +262,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bWz-HB-Hwm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2863.768115942029" y="117.85714285714285"/>
+            <point key="canvasLocation" x="2658" y="118"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="efX-PH-Ozn">
